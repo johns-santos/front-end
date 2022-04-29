@@ -1,0 +1,91 @@
+/* =====================================
+        DEFAULT VALUES:
+Font Family    : Roboto Condensed
+
+Greenish Blue   : #34c6d3   (Buttons, Icons, Links, Lines & Backgrounds)
+Steel Gray      : #41464b   (Headings)
+Blue Bayoux     : #64707b   (Paragraphs)
+White           : #fff      (Text with Black Backgrounds)
+Black           : #000
+===================================== */
+
+/* ===================== GENERAL CSS ===================== */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+/* ===================== HOME SECTION ===================== */
+#home {
+  height: 100%;
+}
+
+.home-cover {
+  height: 100%;
+  background-image: url('../images/bg-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* PARRALEX AFFECT */
+}
+
+#home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  /*Contains text and btn*/
+  display: table-cell;
+  vertical-align: middle; /* set content vertically centered */
+  text-align: center; /* set content horizontal center */
+}
+
+#home-heading h3 {
+  /* h3 inside home-heading div*/
+  color: #fff;
+  font-size: 55px;
+  font-weight: 700; /*Google font value*/
+  margin: 20px 0 20px 0;
+}
+
+.btn{
+    border: solid 1px #337ab7;
+}
+
+
+/* ===================== BUTTONS SECTION ===================== */
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:hover, btn-white:focus{
+    background-color: #fff;
+    color: #41464b ;
+}
+
+/* ===================== HOME SECTION ===================== */
+
+/* ===================== HOME SECTION ===================== */
+
+/* ===================== HOME SECTION ===================== */
