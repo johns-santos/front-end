@@ -23,18 +23,20 @@ h3 {
   text-transform: uppercase;
 }
 
+
+:root {
+  --animate-duration: 6s;
+}
+
+
 /* ===================== HOME SECTION ===================== */
 #home {
   height: 100%;
 }
 
-.home-cover {
+#home-cover {
   height: 100%;
   background-image: url('../images/bg-home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* PARRALEX AFFECT */
 }
 
 #home-content-box {
@@ -46,46 +48,94 @@ h3 {
 #home-content-box-inner {
   /*Contains text and btn*/
   display: table-cell;
-  vertical-align: middle; /* set content vertically centered */
-  text-align: center; /* set content horizontal center */
+  vertical-align: middle;
+  /* set content vertically centered */
+  /* text-align: center; set content horizontal center */
 }
 
 #home-heading h3 {
   /* h3 inside home-heading div*/
   color: #fff;
   font-size: 55px;
-  font-weight: 700; /*Google font value*/
+  font-weight: 700;
+  /*Google font value*/
   margin: 20px 0 20px 0;
 }
 
-.btn{
-    border: solid 1px #337ab7;
+/* ===================== PARALLAX EFFECT ===================== */
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.btn {
+  border: solid 1px #337ab7;
 }
 
 
 /* ===================== BUTTONS SECTION ===================== */
 .btn-general {
-    border-color: #fff;
-    border-width: 2px;
-    border-radius: 0;
-    padding: 12px 26px 12px 26px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
+  border-color: #fff;
+  border-width: 2px;
+  border-radius: 0;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .btn-white {
-    border-color: #fff;
-    color: #fff;
+  border-color: #fff;
+  color: #fff;
 }
 
-.btn-white:hover, btn-white:focus{
-    background-color: #fff;
-    color: #41464b ;
+.btn-white:hover,
+btn-white:focus {
+  background-color: #fff;
+  color: #41464b;
 }
 
-/* ===================== HOME SECTION ===================== */
+/* ===================== ANIMATION SECTION ===================== */
+#home-cover{
+  animation-delay: .1;
+  animation-duration: .8s;
+}
+#home-heading h3 {
+  animation-delay: .5s;
+  animation-duration: 4s;
 
-/* ===================== HOME SECTION ===================== */
+}
+
+#home-btn{
+  animation-delay: 1s;
+  animation-duration: 4s;
+}
+
+/* ===================== CONTENT BOX ===================== */
+.content-box {
+  padding: 60px 0 60px 0;
+}
+
+.content-title h3{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+  width: 30px;
+  height: 3px;
+  background-color: #34c6d3;
+  margin: 0 auto 30px auto;
+}
+
+.service-item-icon {
+  align-content: center;
+  color: #34c6d3;
+
+}
 
 /* ===================== HOME SECTION ===================== */
